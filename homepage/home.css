@@ -1,9 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: #12006B;
     overflow-x: hidden;
     max-width: 100%;
 }
-
 
 .garis{
     width: 60%;
@@ -256,8 +260,72 @@ body{
     margin: 30px auto;
     padding: 20px;
 }
-.
 
+/* Speaker */
+
+.speakers-wrapper {
+    box-sizing: border-box;
+    overflow: hidden;    
+}
+
+.speakers-content {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    padding: 0 10px;
+    margin: 30px auto;
+}
+
+.speakers-description h1 {
+    width: fit-content;
+    font-size: 65px;
+    font-weight: 900;
+    top: 37.5%;
+    left: 3%;
+}
+
+.vertical {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    position: absolute;
+}
+
+.speakers-image {
+    position: relative;
+
+}
+
+.speaker-image{
+    display: inline-block;
+    border: 3px red solid;
+    border-right: 0;
+    width: 150px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.speaker-image img{
+    width: 150px;
+    height: 450px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.speaker-image:last-child {
+    border-right: 3px red solid;
+}
+
+@media only screen and (max-width: 1200px){
+    .speakers-description h1{
+        margin: 0 auto 20px auto;
+    }
+
+    .speakers-description .vertical{
+        transform: rotate(0deg);
+        position: relative;
+    }
+}
 
 @media(min-width:1100px){
     .tombol svg{
