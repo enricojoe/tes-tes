@@ -491,6 +491,8 @@ body{
     
 }
 
+/* tahun lalu */
+
 .tahunlalu{
     display: flex;
     justify-content: center;
@@ -514,11 +516,25 @@ body{
 }
 
 .webicostahunlalu{
-    margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 5%;
+    padding-bottom: 40px;
+}
+h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 6%;
+    width: fit-content;
+    color: white;
+
 }
 .recent{
-    padding: 10px 0px 10px 0;
-    background-color: red;
+    border-radius: 100px;
+    width: 220px;
+    font-family: 'P';
+    margin: 3% auto 7%;
+    text-align: center;
+    background-color: #FF0411;
 }
 
 /*apri */
@@ -528,12 +544,6 @@ h1{
     text-align: center;
     font-size: 65px;
     font-weight: 900;
-}
-
-h2{
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
 }
 
 .xcontainer {
@@ -587,6 +597,52 @@ h2{
     .footer-copyright{
         color: gray;
     }
+
+.garisfooter{
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: black;
+    height: 3px;
+    width: 100%;
+}
+.isifooter{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.isitelpon{
+    margin-left: 12%;
+    margin-right: 8%;
+}
+
+.isifooter p{
+    margin-left: 2%;
+    margin-top: -2%;
+}
+.isitelpon .far{
+    float: left;
+}
+.sosmedfooter{
+    text-align: right;
+}
+.fab{
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+@media(max-width:700px){
+    .isifooter{
+        text-align: center;
+    }
+    .isitelpon .far{
+        float: none;
+    }
+    .sosmedfooter{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
 
 /*shape */
 
