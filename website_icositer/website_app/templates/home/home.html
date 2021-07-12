@@ -29,6 +29,8 @@
         <div class="line1"></div>
         <div class="line1"></div>
         <div class="line1"></div>
+        <div class="line1"></div>
+        <div class="line1"></div>
       </div>
       <div class="sosmed">
             <a class="tombol fb" href="#">
@@ -53,6 +55,8 @@
             </a>
       </div>
       <div class="linekanan">
+        <div class="isilinekanan"></div>
+        <div class="isilinekanan"></div>
         <div class="isilinekanan"></div>
         <div class="isilinekanan"></div>
         <div class="isilinekanan"></div>
@@ -110,9 +114,16 @@
       <div class="linews">
         <div class="linenews1"></div>
         <div class="linenews1"></div>
-        <div class="linenews1"></div>
+        <div class="linenews1"></div><div class="linenews1"></div>
         <div class="linenews1"></div>
       </div>
+    </div>
+
+    <div class="linehorizontal">
+      <div class="horizontal1"></div><div class="horizontal1"></div>
+      <div class="horizontal1"></div>
+      <div class="horizontal1"></div>
+      <div class="horizontal1"></div>
     </div>
 
 
@@ -148,7 +159,18 @@
       <div class="linenews1"></div>
       <div class="linenews1"></div>
       <div class="linenews1"></div>
+      <div class="linenews1"></div>
     </div>
+
+    <div class="linehorizontalleft">
+      <div class="lineleft1"></div><div class="lineleft1"></div>
+      <div class="lineleft1"></div><div class="lineleft1"></div>
+      <div class="lineleft1"></div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
     <br>
     <br>
 
@@ -182,9 +204,9 @@
       <div class="line1"></div>
       <div class="line1"></div>
       <div class="line1"></div>
+      <div class="line1"></div>
+      <div class="line1"></div>
     </div>
-    <br>
-    <br>
 
 
   <div class="webicostahunlalu"></div>
@@ -200,7 +222,7 @@
         <a href="#" class="weblalu">
           <img src="{% static 'home/asset/logo.png' %}">
         </a>
-        <div class="des">ICoSITeR | 20219</div>
+        <div class="des">ICoSITeR | 2019</div>
       </div>
       <div class="duapuluh">
         <a href="#" class="weblalu">
@@ -212,6 +234,8 @@
   </div>  
 
   <div class="line">
+    <div class="line1"></div>
+    <div class="line1"></div>
     <div class="line1"></div>
     <div class="line1"></div>
     <div class="line1"></div>
@@ -299,14 +323,17 @@
 
     var timer = new Timer(function() {
       changenews();
+      timer.reset(5000);
     }, 5000);
  
     $(".next").click(function(){
       changenews();
+      timer.reset(5000);
     });
 
     $(".prev").click(function(){
       minusnews();
+      timer.reset(5000);
     });
 </script>
 {% endblock isi %}
