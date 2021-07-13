@@ -238,11 +238,13 @@ body{
 .deskripsi{
     min-width: none;
     max-width: 1920px;
-    margin: 30px auto;
+    margin: 5% auto;
     padding: 20px;
 }
 .sidebarsatu{
+    margin-left: 7%;
     flex: 2;
+    padding-right: 10px;
     margin-top: -10px;
     text-align: center;
 }
@@ -269,6 +271,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .sidebardua{
+    margin-top: 10%;
     flex: 4;
     position: relative;
     margin-right: 5%;
@@ -278,7 +281,7 @@ body{
     position: absolute;  
     top: 0;  
     bottom: 0;  
-    left: 0;  
+    left: 3.5%;  
     right: 0;  
     margin: auto;
 }
@@ -316,7 +319,8 @@ body{
         min-width: 360px;
     }
     .sidebarsatu{
-        padding-top: 0%;
+        margin-top: 13%;
+        margin-left: 0%;
         margin-bottom: 10%;
     }
     .sidebarsatu h1{
@@ -787,3 +791,69 @@ h1{
 
 /*shape */
 
+
+
+.bulet{
+    
+        font-size: 500%;
+        width: 0.2em;
+        height: 0.2em;
+        margin-top: 1%;
+        margin-left: 2%;
+        position: absolute;
+        border-radius: 0.35em;
+        background-color:#FF0411 ;
+        left: 5%;
+      }
+.garing{
+        position: absolute;
+        left: -0.25em;
+        bottom: -0.1em;
+        background: #FF0411 ;
+        width: 0.35em;
+        height: 0.05em;
+        transform: rotate(315deg);
+}
+.lurus{
+    position: absolute;
+    left: -0.215em;
+    top: 0.39em;
+    background: #FF0411 ;
+    width: 0.05em;
+    height: 2.5em;
+}
+.garing2{
+    position: absolute;
+    left:0.05em;
+    top: 2.75em;
+    border-width: 0;
+    background: #FF0411 ;
+    width: 0.05em;
+    height: 0.75em;
+    transform: rotate(135deg);
+}
+.lurus2{
+    position: absolute;
+    left: 0.3em;
+    top: 3.35em;
+    background: #FF0411 ;
+    width: 14.09em;
+    height: 0.05em;
+}
+.garing3{
+    position: absolute;
+    left: 14.7em;
+    top: 3.21em;
+    background: #FF0411 ;
+    width: 0.05em;
+    height: 1em;
+    transform: rotate(135deg);
+}
+.lurus3{
+    position: absolute;
+    left: 15.05em;
+    top: 4.05em;
+    background: #FF0411 ;
+    width: 0.05em;
+    height: 2.5em;
+}
