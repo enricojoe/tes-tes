@@ -40,42 +40,42 @@ body{
 }
 
 .garis{
-    z-index: -1;
+    z-index: 2;
     width: 70%;
     height: 3px;
-    position: absolute;
+    position:absolute;
     top: 3%;
     background-image: linear-gradient(to right, #FF0411 70%, #12006B);
 }
 .garis1{
-    z-index: -1;
+    z-index: 2;
     width: 70%;
     height: 3px;
-    position: absolute;
+    position:absolute;
     top: 4.5%;
     background-image: linear-gradient(to right, #FF0411 70%, #12006B);
 }
 .garis2{
+    z-index: 2;
     width: 70%;
-    z-index: -1;
     height: 3px;
-    position: absolute;
+    position:absolute;
     top: 6%;
     background-image: linear-gradient(to right, #FF0411 70%, #12006B);
 }
 .garis3{
+    z-index: 2;
     width: 70%;
-    z-index: -1;
     height: 3px;
-    position: absolute;
+    position:absolute;
     top: 7.5%;
     background-image: linear-gradient(to right, #FF0411 70%, #12006B);
 }
 .garis4{
+    z-index: 2;
     width: 70%;
-    z-index: -1;
     height: 3px;
-    position: absolute;
+    position:absolute;
     top: 9%;
     background-image: linear-gradient(to right, #FF0411 70%, #12006B);
 }
@@ -120,11 +120,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-#regis{
-    padding: 10px;
-    border-radius: 30px;
-    background-color: #FF0411 ;
-}
+
 .line{
     flex: 2;
     margin-top: 3%;
@@ -180,7 +176,18 @@ body{
 }
 
 .navbar{
-    margin-top: 1%;
+    z-index: 3;
+    height: 100px;
+    background: rgba(0, 17, 86, 0.6);
+}
+
+.navbar-brand{
+    z-index: 1000;
+    position: relative;
+}
+.navbar-brand img{
+    background-color: white;
+    margin-right: 10px;
 }
 
 .nav-item{
@@ -243,8 +250,7 @@ body{
 }
 .sidebarsatu{
     margin-left: 7%;
-    flex: 2;
-    padding-right: 10px;
+    flex: 2.7;
     margin-top: -10px;
     text-align: center;
 }
@@ -267,6 +273,7 @@ body{
 }
 
 .sidebarsatu p{
+    font-size: 19px;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -569,7 +576,6 @@ body{
     }
     .sidebarsatu p{
         font-family: 'Montserrat', sans-serif;
-        font-size: 25px;
         display: flex;
         color: white;
     }
@@ -879,17 +885,17 @@ h1{
     position: absolute;
     width: 3px;
     height: 60px;
-    top:calc(15.5vw - 3px);
+    bottom: -50px;
     left: 20px;
     transform: rotate(-45deg);
     background: #FF0411;
 }
 .lurus2{
     position: absolute;
-    width: 80vw;
+    width: 85vw;
     height: 3px;
-    left: 12px;
-    margin-top: calc(15vw + 103px);
+    left: 42px;
+    bottom: -42px;
     background: #FF0411;
 }
 .garing3{
@@ -932,7 +938,7 @@ h1{
     z-index: -1;
     height: calc(27vw + 100px);
     width: 3px;
-    top: 11vw;
+    top: 140px;
     background-image: linear-gradient(to top, #FF0411 30%, #12006B);
 }
 .garing5{
@@ -949,7 +955,7 @@ h1{
     z-index: -1;
     height: 3px;
     width: 80vw;
-    top: calc(27vw + 140px);
+    bottom: -42px;
     right: 42px;
     background-image: linear-gradient(to top, #FF0411 30%, #12006B);
 }
@@ -964,7 +970,7 @@ h1{
 }
 .lurus7{
     position: absolute;
-    height: calc(900px - 8vw);
+    height: calc(800px - 0.5vw);
     width: 3px;
     top: 42px;
     left: -40px;
@@ -989,8 +995,16 @@ h1{
     background: #FF0411;
 }
 
-@media(min-width:1900px){
-    .lurus2{
-        margin-top: calc(15vw + 106px);
+
+@media(max-width:990px){
+    .lurus{
+        height: 85vw;
     }
+    .lurus4{
+        height: 90vw;
+    }
+    .lurus7{
+        height: 99vw;
+    }
+
 }
