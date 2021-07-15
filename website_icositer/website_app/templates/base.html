@@ -15,32 +15,43 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@900&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/05d609b6c5.js" crossorigin="anonymous"></script> 
+		<link rel = "icon" href = "{% static 'home/asset/logo.png' %}" type = "image/x-icon">
         <title>ICoSITeR 2021</title> 
     </head>
     <body>
     	<!-- TOP-NAVBAR -->
 	    <div class="header">
 	      <div class="gambar"></div><div class="gambarbelakang"></div>
-	      <div class="garis"></div><div class="garis1"></div><div class="garis2"></div><div class="garis3"></div><div class="garis4"></div>
+		  <div class="kumpulangaris">
+			<div class="garis"></div><div class="garis1"></div><div class="garis2"></div><div class="garis3"></div><div class="garis4"></div>
+		  </div>
 	      <nav class="navbar navbar-expand-lg fixed-top">
-	        <a class="navbar-brand"></a>
+	        <a class="navbar-brand" href="#">
+				<img src="{% static 'home/asset/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+				ICoSITeR 2021
+			  </a>
 	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	          <div class="navbar-toggler-inner"></div>
 	        </button>
 	        <div class="collapse navbar-collapse" id="navbarNav">
 	          <ul class="navbar-nav ml-auto mr-5">
 	            <li class="nav-item active">
-	              <a class="nav-link" href="#speakersection">Speakers<span class="sr-only">(current)</span></a>
+	              <a class="nav-link" href="#speakersection">Home<span class="sr-only">(current)</span></a>
 	            </li>
-	            <li class="nav-item">
-	              <a class="nav-link" href="#">Info</a>
-	            </li>
-	            <li class="nav-item">
-	              <a class="nav-link" href="#">About</a>
-	            </li>
-	            <li class="nav-item">
-	              <a class="nav-link" id="regis" href="#">Register</a>
-	            </li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Event
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="nav-link" href="#">curlltural night</a>
+						<a class="nav-link" href="#">virtual exibition</a>
+						<a class="nav-link" href="#">conference</a>
+						<a class="nav-link" href="#">competition</a>
+					</div>
+				<li class="nav-item active">
+					<a class="nav-link" href="#speakersection">About</a>
+				</li>
+				</li>
 	          </ul>
 	        </div>
 	      </nav>
